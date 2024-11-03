@@ -1,0 +1,233 @@
+/*FONTS*/
+@font-face {
+    font-family: Glitch;
+    src: url(../fonts/sd-dystopian-font/Sddystopiandemo-GO7xa.otf);
+}
+
+@font-face {
+    font-family: Glitch2;
+    src: url(../fonts/cf-glitch-city-font/CfGlitchCityRegular-L1vZ.ttf);
+}
+
+@font-face {
+    font-family: data;
+    src: url("../fonts/data-control/data-latin.ttf");
+}
+/*VARIABLES*/
+:root {
+    --LTeal: rgb(76, 226, 168);
+    --MTeal: rgb(60, 179, 134);
+    --BGTeal: rgba(32, 39, 37, 0.85);
+    --HTeal: rgba(17, 26, 24, 0.85);
+    --BGTeal2: #4dffd5;
+  }
+
+@-webkit-keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e6b4, 0 0 40px #00e6b4, 0 0 50px #00e6b4, 0 0 60px #00e6b4, 0 0 70px #00e6b4;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #4dffd5, 0 0 40px #4dffd5, 0 0 50px #4dffd5, 0 0 60px #4dffd5, 0 0 70px #4dffd5, 0 0 80px #4dffd5;
+      }
+}
+html {
+    overflow: hidden;
+    height: 100%;
+}
+body {
+    background-image: url("../imgs/bgtest4small.png");
+    background-size: contain;
+    color: white;
+    image-rendering: -webkit-optimize-contrast;
+    overflow: auto;
+    height: 100%;
+    
+    /*animation: fade-in 2s;*/
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 3fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: 
+    ". . hd hd . ."
+    ". sb ct ct ct ."
+    ". . ct ct ct .";
+    /*display: flex;*/
+    width: auto;
+    max-width:1400px;
+    margin:auto;
+    /*gap: 30px 30px; 
+    max-width:1100px;*/
+}
+/*title glow*/
+.glow {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline;
+    /*border-left: 2px solid #000000;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*margin-right: -4px;*/
+    
+}
+nav ul li:hover {
+    background-color: var(--LTeal);
+    color: black;
+}
+.sideB ul li {
+    list-style: none;
+    text-align: center;
+}
+.sideB ul {
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.sideB ul li a{
+    color: white;
+    font-size: 1.5em;
+}
+.sideB ul li a:hover{
+    color: var(--LTeal);
+}
+.sideB h2 {
+    color: var(--LTeal);
+}
+#topmenu {
+    text-align: center;
+    font-size: 1.375em;
+    letter-spacing: 0.3rem;
+    width: 100%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+#topmenu a {
+    color: white;
+    font-size: 25px;
+    /*background-color: rgba(67, 110, 95, 0.8);*/
+    padding: 5px 5px 5px 5px;
+}
+#topmenu a:hover {
+    /*color: rgb(29, 59, 49);
+    background-color: rgba(169, 250, 222,0.5);*/
+    color: var(--LTeal);
+}
+
+div div {
+
+}
+.head {
+    margin-bottom: 1em;
+    width: 100%;
+    position: relative;
+    text-align: center;
+	padding: 1em 0 1em 0;
+    font-family: Glitch;
+    grid-area: hd;
+    background-color: var(--HTeal);
+}
+
+main {
+    grid-area: ct;
+    background-color: var(--HTeal);
+    padding: 20px;
+    font-family: data;
+    font-size: 2em;
+    text-shadow: 0.05em 0 0.5px rgb(255, 2, 2), -0.05em 0 0.5px var(--LTeal);
+}
+.content {
+    font-size: 0.75em;
+}
+aside {
+    grid-area: sb;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+    background-color: var(--HTeal);
+    padding-left: 1em;
+    padding-right: 1em;
+    font-family: data;
+}
+/*icons under about header*/
+.icon1::before {
+    content: url("../imgs/Gendersigntiny.png");
+    height: 60px;
+    width: 60px;
+}
+/*larger font size for home link*/
+#largerT {
+    font-size: 2em;
+}
+.h3 {
+    font-family: Glitch; 
+    font-size: 2em;
+}
+.h3 p {
+    font-family: Glitch;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0.5em;
+}
+.icons {
+    text-shadow: 0.05em 0.5 0.5px var(--BGTeal2);
+    font-size: 1.5em;
+    line-height: 0.5em;
+    margin: 15px;
+}
+
+button {
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: data;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--LTeal);
+  color: var(--BGTeal2);
+}
+
+.section1 img{
+    height: 50%;
+    width: 50%;
+}
+.plainHeader {
+    margin: 0px;
+}

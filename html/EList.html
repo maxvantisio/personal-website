@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title> 🞂 My Website 🞀 </title>
+   <link rel="stylesheet" href='../styles/projects.css'>
+   <script>
+    function freezegifs() {
+      var x = document.querySelectorAll('.freeze img, img.freeze'); 
+      for(var i=0; i<x.length; i++) {
+        x[i].src = x[i].src.slice(0, -3) + 'png' ;}}
+          
+    function resumegifs() {
+      var x = document.querySelectorAll('.freeze img, img.freeze'); 
+      for(var i=0; i<x.length; i++) {
+        x[i].src = x[i].src.slice(0, -3) + 'gif' ;}}
+  </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <h1 class="glow"> 🞂 BreakerSpace 🞀 </h1>
+            <nav class="Menu hoverline" id="topmenu">
+                    <a href="gallery.html">Gallery</a>
+                    <!--have a current and future/past sections for projects-->
+                    <a href="projects.html">Projects</a>
+                    <a href="music.html">Music</a>
+                    <a href="links.html">Links</a>
+                    <a href="EList.html">Eternal List</a>
+                    <a href="about.html">About Me</a>
+            </nav>
+        </div>
+
+        <aside>
+            <div class="sideB">
+            <section class="sideBar" id="sidebar">
+                    <img src="">
+                    <h2> 🞂 LINKS 🞀 </h2>
+                    <ul>
+                        <!--social media links, plus home button?-->
+                        <li><a href="">Tumblr</a></li>
+                        <li><a href="">Bluesky</a></li>
+                        <li><a href="">Itch.io</a></li>
+                        <br>
+                        <li id="largerT"><a href="index.html">Home</a></li>
+                        <br>
+                        <li><button onclick="freezegifs()">pause gifs</button></li>
+                        <br>
+                        <li><button onclick="resumegifs()">play gifs</button></li>
+                    </ul>
+            </section>
+            </div>
+        </aside>
+    <main>
+        <div class="freeze">
+        <!--400x400 image-->
+        <img src="../imgs/iconResize.gif" height="auto" max-width="100%" style="float:left">
+        </div>
+        <!--add text shadow white font/teal shadow?-->
+        <div class="h3" align="right">
+            LIST
+            <br>
+            he/him/his
+        </div>
+        <!--icons 60x60ish-->
+        <div class="h3" id="icons" align="right">
+            <i class="icon1">
+                ::before</i>-<i class="icon2">::before</i>-
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+
+                Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor.</p>
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+                
+                Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor.</p>
+                
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.</p>
+                
+                Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna. Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor.</p>
+                </p>
+        </div>
+    </main>
+    </div>   
+</body>
+</html>
